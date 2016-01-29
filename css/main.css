@@ -1,0 +1,33 @@
+@import "reset.css";
+
+body {
+    background:white;
+}
+.wrap {
+    display:block;
+    width:640px;
+    height:480px;
+    margin:3em auto;
+    position:relative;
+}
+.wrap img {
+    position:absolute;
+    top:0; left:0;
+}
+video {
+    transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+}
+.area {
+    display:block;
+    width:640px;
+    height:480px;
+    border:1px dashed #aaa;
+}
+button {
+    padding:2px 5px;
+}
+#videoarea {z-index:3;}
+#guy {z-index:1;}
+#droparea {z-index:2;}
+#rick.over { border:1px solid red; }
