@@ -18,6 +18,14 @@
         <!-- don't index me (please) -->
         <meta name="robots" content="noindex" />
         <meta name="googlebot" content="noindex" />
+        <script>
+(function (loc) {
+    // Force https
+    if (loc.protocol != "https:") {
+        loc.href = "https:" + loc.href.substring(loc.protocol.length);
+    }
+}(window.location));
+        </script>
 	</head>
 	<body>
         <a href="https://github.com/omrilotan/videoNcanvas" class="source"></a>
